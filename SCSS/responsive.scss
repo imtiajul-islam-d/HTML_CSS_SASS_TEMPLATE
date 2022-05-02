@@ -1,0 +1,89 @@
+$fontPrimary : 'Inter', sans-serif;
+$markColor : #029837;
+$textColorPrimary : #000;
+$textColorSecondery : #fff;
+@media all and (min-width: 768px){
+    #home{
+        nav{
+            ul{
+                display: flex;
+                text-align: center;
+                margin-bottom: 0;
+                li:last-child{
+                    a{
+                        padding: .5em;
+                        border-radius: 10px;
+                        border: $markColor solid 1px;
+                        color: $textColorPrimary;
+                        &:hover{
+                            background-color: $markColor;
+                            color: $textColorSecondery;
+                        }
+                    }
+                }
+                li{
+                    list-style-type: none;
+                    margin-left: 2em;
+                    display: flex;
+                    align-items: center;
+                    a{
+                        font-size: .9em;
+                        text-decoration: none;
+                        color: $textColorPrimary;
+                        padding: 0;
+                        
+                    }
+                }
+            }
+            .menu-icon{
+                display: none;
+            }
+            .contact-us{
+                display: none;
+            }
+        }
+        main{
+            .row{
+                .col-md-6{
+                    display: flex;
+                    align-items: center;
+                    // .box-home{
+                    //     p{
+                    //         max-width: 27em;
+                    //     }
+                    // }
+                    img{
+                        align-self: flex-end;
+                    }
+                }
+            }
+        }
+    }
+}
+// about
+@media all and (min-width: 768px){
+    #about{
+        min-height: 90vh;
+        
+        .container{
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            .row{
+              
+                .col-md-6{
+                    display: flex;
+                    flex-direction: column;
+                   
+                    justify-content: center;
+                    h2{
+                      text-align: start;  
+                    }
+                    p{
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+}
